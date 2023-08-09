@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -34,7 +33,7 @@ class _FeaturedProductsState extends State<FeaturedProducts> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: 20),
       width: 181,
       height: 304,
       color: Colors.white,
@@ -48,7 +47,7 @@ class _FeaturedProductsState extends State<FeaturedProducts> {
                       // padding: EdgeInsets.all(5),
                       alignment: Alignment.center,
                       color: HexColor("#FDEFD5"),
-                      margin: EdgeInsets.only(left: 5),
+                      margin: const EdgeInsets.only(left: 5),
                       width: 50,
                       height: 25,
                       child: Text(
@@ -62,7 +61,7 @@ class _FeaturedProductsState extends State<FeaturedProducts> {
                       // padding: EdgeInsets.all(5),
                       alignment: Alignment.center,
                       color: Colors.white,
-                      margin: EdgeInsets.only(left: 5),
+                      margin: const EdgeInsets.only(left: 5),
                       width: 50,
                       height: 25,
                     ),
@@ -93,7 +92,7 @@ class _FeaturedProductsState extends State<FeaturedProducts> {
             Container(
               // width: 100,
               // height: 200,
-              margin: EdgeInsets.only(top: 40, right: 10),
+              margin: const EdgeInsets.only(top: 40, right: 10),
               child: Image.asset(
                 widget.fruitImage,
                 width: widget.width,
@@ -101,7 +100,7 @@ class _FeaturedProductsState extends State<FeaturedProducts> {
               ),
             ),
           ]),
-          Spacer(flex: 1),
+          const Spacer(flex: 1),
           Text(
             textAlign: TextAlign.center,
             "\$ " + widget.Price.toString(),
@@ -111,18 +110,18 @@ class _FeaturedProductsState extends State<FeaturedProducts> {
               color: HexColor("#6CC51D"),
             ),
           ),
-          Spacer(flex: 1),
+          const Spacer(flex: 1),
           Text(
             textAlign: TextAlign.center,
             widget.fruitName,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-          Spacer(),
+          const Spacer(),
           Text(
             widget.size,
             style: TextStyle(color: HexColor("#868889")),
           ),
-          Divider(
+          const Divider(
             thickness: 1,
           ),
           GestureDetector(
